@@ -4,13 +4,13 @@ import { auth } from "@clerk/nextjs";
 const CreateEvent = () => {
   const { sessionClaims } = auth();
 
-  const userId = sessionClaims?.userId as string;
+  const userId = 'user_2gnX0Ns99RdFXhjMwHxCT2lf2uG' as string;
 
-  // console.log(userId);
+  console.log(userId);
 
-  // if (!userId) {
-  //   return <div>Loading...</div>; // Display a loading state while checking authentication
-  // }
+  if (!userId) {
+    return <div>Loading...</div>; // Display a loading state while checking authentication
+  }
 
   return (
     <>
